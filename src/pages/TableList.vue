@@ -20,7 +20,6 @@
           </div>
         </card>
       </div>
-
     </div>
 </template>
 <script>

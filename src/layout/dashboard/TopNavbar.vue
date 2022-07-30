@@ -19,7 +19,7 @@
               <p>Stats</p>
             </a>
           </li>
-          <drop-down class="nav-item"
+          <drop-y class="nav-item"
                      title="5 Notifications"
                      title-classes="nav-link"
                      icon="ti-bell">

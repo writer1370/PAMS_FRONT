@@ -23,6 +23,7 @@ export default {
   name: 'paper-table',
   props: {
     columns: Array,
+    data1: Array,
     data: Array,
     type: {
       type: String, // striped | hover
@@ -36,6 +37,12 @@ export default {
       type: String,
       default: ""
     }
+  },
+  mounted() {
+    console.log(this.data)
+ //   console.log(this.data1)
+    console.log('1');
+    console.log('2');
   },
   computed: {
     tableClass() {
