@@ -1,32 +1,25 @@
 <template>   
   <div class="row">
       <div class="col-12">
-        <card :title="table1.title" :subTitle="table1.subTitle">
+        <card :title="table1.title" :subTitle="table1.subTitle" >
+        
           <div slot="raw-content" class="table-responsive">
             <paper-table :data="table1.data" :columns="table1.columns">
 
             </paper-table>
           </div>
+          
         </card>
       </div>
-    </div>
+  </div>
 </template>
 
 <script>
-import Vue from 'vue'
 import { PaperTable } from "@/components";
 import axios from 'axios'
 const tableColumns = ["ID", "title", "작성자", "첨부파일"];
 let data = [{ msg: 'hello world' }];
 let response
-// let tableData = [
-//     // {
-//     //   번호: 1,
-//     //   제목: "Dakota Rice",
-//     //   작성자: "$36.738",
-//     //   첨부파일: "Niger"
-//     // }
-//  ];
 export default {
   components: {
     PaperTable
@@ -58,6 +51,9 @@ export default {
 
      //   console.log("created : " + tableData.length)
    },
+    test() {
+      console.log("추가");
+    }
   },
   data() {
     return {
